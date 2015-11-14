@@ -30,12 +30,13 @@ $({selector}).jsdragtable({
     skipFirst: false,
     handleElementName: 'th',
     dropEvent: function(container){
+      var sort = [];
       $(container).find("th").each(function (headerIndex, header) {
                         sort[headerIndex] = $(header).data('class-pk');
                     });
                     if(sort.length){
                         var tableId = $('#tableId').val();
-                        var data = {sort: sort}
+                        var data = {sort: sort};
                         $.ajax({
                             type: 'POST',
                             url: '/table/' + tableId + '/sort',
