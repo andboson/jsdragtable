@@ -17,7 +17,7 @@ An example is shown on [jsfiddle](http://jsfiddle.net/brentj73/hs2n71mo/).
 
  `skipFirst` - Prevent dragging first column. Default `true`   
  
- `handleElementName` - If specified check event . Default `true`  
+ `handleElementName` - If specified check touch\mousedown event taget element. Default `true`  
   
  `dropEvent` - Function to process drop event. Useful for save sort order.
 
