@@ -9,7 +9,7 @@ $({selector}).jsdragtable();
 
 An example is shown on [jsfiddle](http://jsfiddle.net/brentj73/hs2n71mo/).
 
-*14.11.2015
+**14.11.2015
 
 -options added
 
@@ -33,7 +33,6 @@ $({selector}).jsdragtable({
       $(container).find("th").each(function (headerIndex, header) {
                         sort[headerIndex] = $(header).data('class-pk');
                     });
-                    editableClass();
                     if(sort.length){
                         var tableId = $('#tableId').val();
                         var data = {sort: sort}
